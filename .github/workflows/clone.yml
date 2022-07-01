@@ -3,7 +3,7 @@ name: clone repos
 on: [push]
 
 jobs:
-  clone a repo:
+  cloning:
     runs-on: ubuntu-latest
     steps:
       - name: checkout

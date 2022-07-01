@@ -3,10 +3,11 @@ name: clone repos
 on: push
 
 jobs:
-  clonia repo:
+  clone a repo:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - name: checkout
+        uses: actions/checkout@v3
         with:
-          name: venkat785/test-1
+          repository: venkat785/test-1
           path: test-1

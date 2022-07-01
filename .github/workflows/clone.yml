@@ -8,15 +8,15 @@ jobs:
     steps:
       - name: clone test-1
         run: |
-          echo "test-1"
+          echo "test-2"
           sleep 10s
       - uses: convictional/trigger-workflow-and-wait@v1.3.0
         with:
           owner: venkat785
-          repo: test-1
+          repo: test-2
           github_token: ${{ secrets.SECRETS_TOKEN }}
           workflow_file_name: deploy.yml
       - name: test results
         run: |
-          echo "test-1 success"
+          echo "test-2 success"
           sleep 10s

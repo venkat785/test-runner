@@ -6,17 +6,17 @@ jobs:
     name: clone repo
     runs-on: ubuntu-latest
     steps:
-      - name: clone test-1
+      - name: clone test-3
         run: |
-          echo "test-2"
+          echo "test-3"
           sleep 10s
       - uses: convictional/trigger-workflow-and-wait@v1.3.0
         with:
           owner: venkat785
-          repo: test-2
+          repo: test-3
           github_token: ${{ secrets.SECRETS_TOKEN }}
           workflow_file_name: deploy.yml
       - name: test results
         run: |
-          echo "test-2 success"
+          echo "test-3 success"
           sleep 10s

@@ -1,6 +1,6 @@
 name: clone repos
 
-on: push
+on: [push]
 
 jobs:
   clone a repo:

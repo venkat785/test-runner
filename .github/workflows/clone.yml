@@ -1,12 +1,22 @@
-name: clone repos
-
-on: [push]
+name: fetch_other_repo
+on: push
 
 jobs:
-  cloning:
+  build:
+    name: clone repo
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@master
+      - name: clone test-1
+        run: |
+          echo "test-1"
+          sleep 10s
+      - uses: convictional/trigger-workflow-and-wait@v1.3.0
         with:
-          name: venkat785/test-1
+          owner: venkat785
+          repo: test-1
+          github_token: ${{ secrets.SECRETS_TOKEN }}
+          workflow_file_name: deploy.yml
+      - name: test results
+        run: |
+          echo "test-1 success"
+          sleep 10s

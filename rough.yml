@@ -1,0 +1,12 @@
+name: clone repos
+
+on: [push]
+
+jobs:
+  cloning:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@master
+        with:
+          name: venkat785/test-1

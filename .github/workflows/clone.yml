@@ -30,7 +30,7 @@ jobs:
           repo: test-3
           github_token: ${{ secrets.SECRETS_TOKEN }}
           workflow_file_name: deploy.yml
-          wait_interval: 10
+          #wait_interval: 10
       - name: test results
         run: |
           echo "test-3 success"

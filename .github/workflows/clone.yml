@@ -13,7 +13,7 @@ jobs:
       - uses: convictional/trigger-workflow-and-wait@v1.3.0
         with:
           owner: venkat785
-          repo: test-3
+          repo: test-1
           github_token: ${{ secrets.SECRETS_TOKEN }}
           workflow_file_name: deploy.yml
           wait_interval: 10
@@ -27,7 +27,7 @@ jobs:
       - uses: convictional/trigger-workflow-and-wait@v1.3.0
         with:
           owner: venkat785
-          repo: test-1
+          repo: test-3
           github_token: ${{ secrets.SECRETS_TOKEN }}
           workflow_file_name: deploy.yml
           wait_interval: 10

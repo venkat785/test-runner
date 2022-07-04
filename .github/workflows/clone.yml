@@ -30,8 +30,36 @@ jobs:
           repo: test-3
           github_token: ${{ secrets.SECRETS_TOKEN }}
           workflow_file_name: deploy.yml
-          #wait_interval: 10
+          wait_interval: 10
+      - uses: convictional/trigger-workflow-and-wait@v1.3.0
+        with:
+          owner: venkat785
+          repo: test-4
+          github_token: ${{ secrets.SECRETS_TOKEN }}
+          workflow_file_name: deploy.yml
+          wait_interval: 10
+      - uses: convictional/trigger-workflow-and-wait@v1.3.0
+        with:
+          owner: venkat785
+          repo: test-5
+          github_token: ${{ secrets.SECRETS_TOKEN }}
+          workflow_file_name: deploy.yml
+          wait_interval: 10
+      - uses: convictional/trigger-workflow-and-wait@v1.3.0
+        with:
+          owner: venkat785
+          repo: test-6
+          github_token: ${{ secrets.SECRETS_TOKEN }}
+          workflow_file_name: deploy.yml
+          wait_interval: 10
+      - uses: convictional/trigger-workflow-and-wait@v1.3.0
+        with:
+          owner: venkat785
+          repo: test-7
+          github_token: ${{ secrets.SECRETS_TOKEN }}
+          workflow_file_name: deploy.yml
+          wait_interval: 10
       - name: test results
         run: |
-          echo "test-3 success"
+          echo "test success"
           sleep 10s

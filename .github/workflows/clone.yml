@@ -61,5 +61,5 @@ jobs:
           wait_interval: 10
       - name: test results
         run: |
-          echo "test failure "
+          echo "test success "
           sleep 10s

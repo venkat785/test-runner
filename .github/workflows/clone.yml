@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: clone test-3
         run: |
-          echo "testing failure"
+          echo "run multiple repo workflows"
           sleep 10s
       - uses: convictional/trigger-workflow-and-wait@v1.3.0
         with:

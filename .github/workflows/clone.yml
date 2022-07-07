@@ -17,7 +17,7 @@ jobs:
           github_token: ${{ secrets.SECRETS_TOKEN }}
           workflow_file_name: deploy.yml
           wait_interval: 10
-      - uses: convictional/trigger-workflow-and-wait@v1.3.0
+      - uses: venkat785/trigger-workflow-and-wait@master
         with:
           owner: venkat785
           repo: test-2
